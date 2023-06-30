@@ -9,8 +9,8 @@ services:
     volumes:
       - /app/node_modules
       - .:/app
-  build_app:
+  test_app:
     build:
       context: .
       dockerfile: Dockerfile.dev
-    command: ["npm", "run", "build"]
+    command: ["npm", "run", "test"]
